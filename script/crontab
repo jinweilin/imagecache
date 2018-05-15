@@ -1,0 +1,1 @@
+*/5 * * * * /usr/src/app/remove_tmp.sh

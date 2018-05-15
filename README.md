@@ -1,0 +1,49 @@
+#Image Service
+It supports image resize and cache, there is a cron job that run every hour to remove cache folder in docker.
+The cache folder locate in /tmp/yyyymmddhh , so every hour that has made a new folder in the /tmp.
+
+#run on local step
+##install nodejs
+https://nodejs.org/en/
+
+##install graphicsmagick
+http://www.graphicsmagick.org/
+In DockerFile I download the version of 1.3.29.
+
+##install node module:
+npm install
+
+##nodejs start :
+node ./app.js
+
+#run on docker
+##install docker
+https://www.docker.com/
+
+##docker-build start:
+docker build -t imagecache .
+## Run
+docker run -d -p 3000:3000 --name imagecache imagecache
+## Remove
+sudo docker rm imagecache
+## Stop
+docker stop imagecache
+## Start
+docker start imagecache
+## Log
+docker logs imagecache
+## bash
+docker exec -i -t imagecache /bin/bash
+
+#example:
+## For Normal
+http://localhost:3000/url
+http://localhost:3000/200/url
+http://localhost:3000/200x300/url
+http://localhost:3000/x300/url
+
+#Port Setting
+There is a property in the `.env `
+PORT=3010
+You also set envirement, ex:
+export PORT=3010
