@@ -58,3 +58,6 @@ There is a property in the `.env `
 
 You also set envirement, ex:
 `export PORT=3010`
+
+# In the Front
+ADD CDN servcie to accelerate your service, it's a best practice.
