@@ -32,17 +32,27 @@ docker stop imagecache
 docker start imagecache
 ## Log
 docker logs imagecache
-## bash
+## Bash
 docker exec -i -t imagecache /bin/bash
 
-#example:
-## For Normal
-http://localhost:3000/url
-http://localhost:3000/200/url
-http://localhost:3000/200x300/url
-http://localhost:3000/x300/url
+# Example:
+* 1.no assign any size 
 
-#Port Setting
+  `http://localhost:3000/url`
+
+* 2.assign only width
+  
+  `http://localhost:3000/200/url`
+
+* 3.assign width and height
+  
+  `http://localhost:3000/200x300/url`
+
+* 4.assign only height
+  
+  `http://localhost:3000/x300/url`
+
+# Port Setting
 There is a property in the `.env `
 `PORT=3010`
 
