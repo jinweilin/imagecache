@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./www.js"
   },
-  "author": "David",
+  "author": "金霸 David",
   "dependencies": {
     "console-stamp": "^0.2.6",
     "etag": "^1.8.1",
