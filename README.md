@@ -1,6 +1,10 @@
 # Image Service
 It supports image resize and cache, there is a cron job that run every hour to remove cache folder in docker.
 The cache folder locate in /tmp/yyyymmddhh , so every hour that has made a new folder in the /tmp.
+# Flow
+![Flow](imageCacheflow.png)
+
+---------------------------------------
 
 # Run on Local Machine
 ## Install Nodejs
